@@ -14,11 +14,28 @@ Launch with::
 
 from __future__ import annotations
 
+import os
+
+# Limit native thread pools BEFORE numpy/scipy/sklearn import. On Streamlit
+# Community Cloud's constrained container, OpenBLAS/OpenMP spawning many threads
+# can segfault the process at startup. Single-threaded is plenty for n=60.
+for _var in (
+    "OMP_NUM_THREADS",
+    "OPENBLAS_NUM_THREADS",
+    "MKL_NUM_THREADS",
+    "NUMEXPR_NUM_THREADS",
+    "VECLIB_MAXIMUM_THREADS",
+):
+    os.environ.setdefault(_var, "1")
+
 import json
 import sys
 from pathlib import Path
 
 import joblib
+import matplotlib
+
+matplotlib.use("Agg")  # headless backend; avoids any GUI-backend crash on Cloud
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -315,9 +332,11 @@ with tab3:
         mdl = joblib.load(config.MODELS_DIR / f"{target_name}_best.joblib")
         X = master[NUMERIC_FEATURES + NOMINAL_FEATURES]
         y = master[target_name]
+        # n_jobs=1: never spawn subprocesses (loky/multiprocessing segfaults in
+        # the Streamlit Cloud sandbox). Fast enough for 60 rows x 20 repeats.
         r = permutation_importance(
             mdl, X, y, n_repeats=20, random_state=config.RANDOM_STATE,
-            scoring="neg_root_mean_squared_error", n_jobs=-1,
+            scoring="neg_root_mean_squared_error", n_jobs=1,
         )
         return (pd.DataFrame({"feature": NUMERIC_FEATURES + NOMINAL_FEATURES,
                               "importance": r.importances_mean,
@@ -325,14 +344,21 @@ with tab3:
                 .sort_values("importance", ascending=False)
                 .reset_index(drop=True))
 
-    imp = perm_importance(target)
-    fig, ax = plt.subplots(figsize=(9, 5.5))
-    top = imp.head(10).iloc[::-1]
-    ax.barh(top["feature"], top["importance"], xerr=top["std"], color="#3b6ea5")
-    ax.set_xlabel("Increase in RMSE when feature is shuffled")
-    ax.set_title(f"Permutation importance — {config.TARGETS[target]}")
-    st.pyplot(fig)
-    plt.close(fig)
+    # Compute lazily on demand: Streamlit runs every tab body on each rerun, so
+    # gating behind a button keeps this off the startup path entirely.
+    if st.button("Compute permutation importance", key="perm_btn"):
+        imp = perm_importance(target)
+        fig, ax = plt.subplots(figsize=(9, 5.5))
+        top = imp.head(10).iloc[::-1]
+        ax.barh(top["feature"], top["importance"], xerr=top["std"],
+                color="#3b6ea5")
+        ax.set_xlabel("Increase in RMSE when feature is shuffled")
+        ax.set_title(f"Permutation importance — {config.TARGETS[target]}")
+        st.pyplot(fig)
+        plt.close(fig)
+    else:
+        st.info("Click the button above to compute permutation importance for "
+                "the selected target.")
 
     st.caption(
         "Permutation importance measures how much CV error grows when a feature "
