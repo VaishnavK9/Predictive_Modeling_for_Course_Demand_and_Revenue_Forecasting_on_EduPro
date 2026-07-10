@@ -1,0 +1,35 @@
+{
+  "winner": "RandomForest",
+  "features": [
+    "lag1",
+    "lag2",
+    "lag3",
+    "roll_mean",
+    "month_sin",
+    "month_cos",
+    "CoursePrice",
+    "CourseDuration",
+    "CourseRating",
+    "CourseLevel_ordinal",
+    "is_free",
+    "inst_rating_wmean",
+    "inst_years_mean",
+    "expertise_match_score"
+  ],
+  "first_test_month": 6,
+  "panel_rows": 540,
+  "forward_chaining": {
+    "Ridge": {
+      "rmse": 3.864408967802623,
+      "mae": 3.0129039004425477,
+      "r2": -0.12730186572859847
+    },
+    "RandomForest": {
+      "rmse": 3.7567763892962422,
+      "mae": 2.9356876333399686,
+      "r2": -0.06538052770532321
+    }
+  },
+  "naive_baseline_rmse": 5.153131271834815,
+  "random_state": 42
+}

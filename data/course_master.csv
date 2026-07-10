@@ -1,0 +1,61 @@
+CourseID,CourseName,CourseCategory,CourseType,CourseLevel,CoursePrice,CourseDuration,CourseRating,enrollment_count,course_revenue,revenue_per_enrollment,is_free,CourseLevel_ordinal,price_band,duration_bucket,rating_tier,inst_rating_wmean,inst_years_mean,inst_years_max,inst_distinct_teachers,inst_dominant_expertise,expertise_match_score
+CR00001,Python Basics,Programming,Paid,Beginner,472.28,11.0,4.74,164,77453.92,472.28,0,0,High,Short,High,4.191646341463414,16.682926829268293,24,25,Machine Learning,0.13414634146341464
+CR00002,Java Programming,Programming,Free,Intermediate,0.0,37.7,2.43,149,0.0,0.0,1,1,Free,Medium,Low,4.2114093959731544,17.013422818791945,24,20,Machine Learning,0.1610738255033557
+CR00003,C++ for Beginners,Programming,Free,Beginner,0.0,19.53,3.85,173,0.0,0.0,1,0,Free,Medium,Mid,4.079017341040462,16.589595375722542,24,27,Cybersecurity,0.13872832369942195
+CR00004,Advanced Python,Programming,Free,Beginner,0.0,45.13,2.88,154,0.0,0.0,1,0,Free,Long,Mid,4.097987012987013,15.896103896103897,24,27,Cybersecurity,0.16233766233766234
+CR00005,Full Stack Development,Programming,Free,Beginner,0.0,28.68,1.28,166,0.0,0.0,1,0,Free,Medium,Low,4.05855421686747,15.795180722891565,24,29,Cybersecurity,0.15060240963855423
+CR00006,Graphic Design Basics,Design,Paid,Advanced,276.37,48.84,2.72,156,43113.72,276.37,0,2,Mid,Long,Mid,4.133461538461538,16.75,24,15,Machine Learning,0.30128205128205127
+CR00007,UI/UX Design,Design,Free,Advanced,0.0,48.68,2.61,178,0.0,0.0,1,2,Free,Long,Mid,3.932584269662921,16.02247191011236,24,16,Design,0.34269662921348315
+CR00008,Photoshop Mastery,Design,Free,Advanced,0.0,2.87,1.52,158,0.0,0.0,1,2,Free,Short,Low,3.999113924050633,16.329113924050635,24,15,Design,0.3291139240506329
+CR00009,Web Design Fundamentals,Design,Free,Beginner,0.0,48.19,4.51,155,0.0,0.0,1,0,Free,Long,High,3.9562580645161294,15.387096774193548,24,19,Design,0.3548387096774194
+CR00010,3D Modeling,Design,Free,Advanced,0.0,15.29,4.45,180,0.0,0.0,1,2,Free,Short,High,3.997055555555556,16.05,24,18,Design,0.32222222222222224
+CR00011,Entrepreneurship 101,Business,Paid,Intermediate,326.02,11.31,2.69,151,49229.02,326.02,0,1,High,Short,Mid,3.9479470198675495,16.52980132450331,24,16,Cybersecurity,0.25165562913907286
+CR00012,Business Strategy,Business,Paid,Advanced,487.92,36.01,3.64,173,84410.16,487.92,0,2,High,Medium,Mid,3.9091907514450863,16.052023121387283,24,18,Machine Learning,0.2658959537572254
+CR00013,Finance for Startups,Business,Free,Advanced,0.0,15.84,2.0,170,0.0,0.0,1,2,Free,Short,Low,3.8742941176470587,15.935294117647059,24,20,Cybersecurity,0.27647058823529413
+CR00014,Sales Mastery,Business,Free,Advanced,0.0,22.29,3.15,171,0.0,0.0,1,2,Free,Medium,Mid,3.769298245614035,15.695906432748538,24,18,Cybersecurity,0.2982456140350877
+CR00015,Leadership Essentials,Business,Paid,Beginner,285.05,34.78,1.96,168,47888.4,285.05,0,0,Mid,Medium,Low,4.0042857142857144,16.708333333333332,24,19,Machine Learning,0.23214285714285715
+CR00016,Digital Marketing,Marketing,Free,Intermediate,0.0,42.68,4.72,153,0.0,0.0,1,1,Free,Long,High,4.160065359477124,16.372549019607842,24,30,Machine Learning,0.10457516339869281
+CR00017,SEO Mastery,Marketing,Free,Advanced,0.0,29.37,4.79,158,0.0,0.0,1,2,Free,Medium,High,4.193291139240506,16.0126582278481,24,28,Machine Learning,0.16455696202531644
+CR00018,Social Media Marketing,Marketing,Free,Advanced,0.0,15.44,2.01,163,0.0,0.0,1,2,Free,Short,Low,4.198159509202454,16.533742331288344,24,28,Cybersecurity,0.12883435582822086
+CR00019,Content Marketing,Marketing,Free,Advanced,0.0,18.0,2.98,177,0.0,0.0,1,2,Free,Medium,Mid,4.2006214689265535,16.497175141242938,24,28,Machine Learning,0.14124293785310735
+CR00020,Email Marketing,Marketing,Free,Intermediate,0.0,46.25,4.11,155,0.0,0.0,1,1,Free,Long,High,4.090258064516129,16.16774193548387,24,25,Cybersecurity,0.14838709677419354
+CR00021,Data Analysis with Python,Data Science,Free,Intermediate,0.0,1.2,3.6,196,0.0,0.0,1,1,Free,Short,Mid,4.152448979591837,17.168367346938776,24,7,Data Science,0.37755102040816324
+CR00022,Data Visualization,Data Science,Free,Beginner,0.0,32.64,3.65,177,0.0,0.0,1,0,Free,Medium,Mid,4.157627118644068,17.305084745762713,24,7,Cybersecurity,0.3446327683615819
+CR00023,Machine Learning Fundamentals,Data Science,Free,Intermediate,0.0,9.71,3.02,185,0.0,0.0,1,1,Free,Short,Mid,4.0725945945945945,16.194594594594594,24,7,Data Science,0.3945945945945946
+CR00024,Big Data Analytics,Data Science,Paid,Advanced,117.68,48.09,2.57,166,19534.88,117.68,0,2,Low,Long,Mid,4.141867469879518,16.55421686746988,24,7,Data Science,0.3855421686746988
+CR00025,Statistical Analysis,Data Science,Paid,Beginner,299.57,48.32,3.74,192,57517.44,299.57,0,0,Mid,Long,Mid,4.13109375,16.489583333333332,24,7,Data Science,0.3854166666666667
+CR00026,Intro to Machine Learning,Machine Learning,Free,Intermediate,0.0,47.7,4.73,172,0.0,0.0,1,1,Free,Long,High,4.291627906976744,14.05813953488372,21,18,Machine Learning,0.8430232558139535
+CR00027,Neural Networks,Machine Learning,Free,Advanced,0.0,9.3,1.81,152,0.0,0.0,1,2,Free,Short,Low,4.269934210526316,14.493421052631579,21,17,Machine Learning,0.8618421052631579
+CR00028,Deep Learning,Machine Learning,Paid,Advanced,0.78,44.96,3.89,171,133.38,0.78,0,2,Low,Long,Mid,4.208128654970761,13.836257309941521,21,21,Machine Learning,0.8245614035087719
+CR00029,Natural Language Processing,Machine Learning,Free,Beginner,0.0,16.33,1.13,155,0.0,0.0,1,0,Free,Short,Low,4.360129032258064,14.36774193548387,21,20,Machine Learning,0.8774193548387097
+CR00030,Reinforcement Learning,Machine Learning,Free,Intermediate,0.0,38.49,1.73,169,0.0,0.0,1,1,Free,Medium,Low,4.302426035502958,14.91715976331361,21,21,Machine Learning,0.8461538461538461
+CR00031,Network Security,Cybersecurity,Free,Intermediate,0.0,26.52,1.91,160,0.0,0.0,1,1,Free,Medium,Low,3.7743124999999997,15.33125,24,9,Cybersecurity,1.0
+CR00032,Ethical Hacking,Cybersecurity,Free,Advanced,0.0,16.74,2.38,163,0.0,0.0,1,2,Free,Medium,Low,3.8412883435582823,15.889570552147239,24,9,Cybersecurity,1.0
+CR00033,Cybersecurity Fundamentals,Cybersecurity,Free,Intermediate,0.0,48.25,3.93,167,0.0,0.0,1,1,Free,Long,Mid,3.814790419161677,15.766467065868264,24,9,Cybersecurity,1.0
+CR00034,Data Encryption,Cybersecurity,Paid,Intermediate,394.26,47.44,1.35,150,59139.0,394.26,0,1,High,Long,Low,3.943666666666666,16.733333333333334,24,9,Cybersecurity,1.0
+CR00035,Cyber Threat Intelligence,Cybersecurity,Free,Beginner,0.0,42.59,4.94,179,0.0,0.0,1,0,Free,Long,High,3.869720670391062,15.614525139664805,24,9,Cybersecurity,1.0
+CR00036,Agile Project Management,Project Management,Free,Beginner,0.0,15.75,4.68,177,0.0,0.0,1,0,Free,Short,High,4.151299435028249,17.389830508474578,24,7,Project Management,0.3615819209039548
+CR00037,Scrum Essentials,Project Management,Free,Intermediate,0.0,33.93,3.45,153,0.0,0.0,1,1,Free,Medium,Mid,4.004313725490196,16.562091503267975,24,7,Project Management,0.40522875816993464
+CR00038,Risk Management,Project Management,Paid,Intermediate,342.61,17.14,4.84,158,54132.380000000005,342.61,0,1,High,Medium,High,4.165569620253164,17.29746835443038,24,7,Cybersecurity,0.34177215189873417
+CR00039,Project Planning,Project Management,Paid,Advanced,346.71,3.42,1.23,167,57900.57,346.71,0,2,High,Short,Low,4.1438922155688624,16.934131736526947,24,7,Machine Learning,0.3712574850299401
+CR00040,Leadership in Projects,Project Management,Paid,Beginner,327.99,12.13,1.51,174,57070.26,327.99,0,0,High,Short,Low,4.0952873563218395,17.29310344827586,24,7,Project Management,0.3563218390804598
+CR00041,Financial Accounting,Finance,Paid,Beginner,53.86,47.08,2.47,166,8940.76,53.86,0,0,Low,Long,Low,4.344879518072289,17.542168674698797,24,8,Cybersecurity,0.30120481927710846
+CR00042,Investment Strategies,Finance,Free,Intermediate,0.0,34.83,4.1,183,0.0,0.0,1,1,Free,Medium,High,4.150437158469945,14.612021857923498,24,8,Finance,0.46994535519125685
+CR00043,Corporate Finance,Finance,Free,Beginner,0.0,31.77,4.14,182,0.0,0.0,1,0,Free,Medium,High,4.235659340659341,16.36813186813187,24,8,Finance,0.37362637362637363
+CR00044,Personal Finance,Finance,Paid,Intermediate,119.04,23.41,2.75,161,19165.440000000002,119.04000000000002,0,1,Low,Medium,Mid,4.379751552795031,16.96894409937888,24,7,Cybersecurity,0.33540372670807456
+CR00045,Financial Modeling,Finance,Free,Advanced,0.0,6.36,1.59,172,0.0,0.0,1,2,Free,Short,Low,4.2875,16.424418604651162,24,8,Finance,0.3546511627906977
+CR00046,AI for Beginners,Artificial Intelligence,Paid,Beginner,248.1,9.4,1.2,140,34734.0,248.1,0,0,Mid,Short,Low,4.051,16.514285714285716,24,8,Cybersecurity,0.34285714285714286
+CR00047,Natural Language Processing,Artificial Intelligence,Paid,Intermediate,89.59,1.55,2.68,166,14871.94,89.59,0,1,Low,Short,Mid,3.9598795180722894,15.265060240963855,24,8,Artificial Intelligence,0.40963855421686746
+CR00048,AI Ethics,Artificial Intelligence,Free,Beginner,0.0,42.7,3.64,186,0.0,0.0,1,0,Free,Long,Mid,4.057526881720429,15.844086021505376,24,8,Artificial Intelligence,0.3655913978494624
+CR00049,Deep Learning,Artificial Intelligence,Paid,Intermediate,415.51,28.33,3.11,163,67728.13,415.51000000000005,0,1,High,Medium,Mid,4.038711656441717,15.39877300613497,24,8,Artificial Intelligence,0.39263803680981596
+CR00050,Computer Vision,Artificial Intelligence,Paid,Beginner,490.9,7.55,4.55,174,85416.59999999999,490.9,0,0,High,Short,High,3.9402873563218392,15.21264367816092,24,8,Artificial Intelligence,0.41379310344827586
+CR00051,HTML & CSS,Web Development,Paid,Advanced,37.89,24.11,1.3,171,6479.1900000000005,37.89,0,2,Low,Medium,Low,4.0678947368421055,15.690058479532164,24,20,Machine Learning,0.29239766081871343
+CR00052,JavaScript Mastery,Web Development,Free,Beginner,0.0,40.76,2.2,154,0.0,0.0,1,0,Free,Long,Low,4.05077922077922,15.2987012987013,24,15,Web Development,0.35064935064935066
+CR00053,React for Beginners,Web Development,Free,Advanced,0.0,40.07,2.67,163,0.0,0.0,1,2,Free,Long,Mid,3.9677914110429446,15.276073619631902,24,17,Web Development,0.34355828220858897
+CR00054,Backend Development with Node.js,Web Development,Free,Beginner,0.0,48.57,3.32,178,0.0,0.0,1,0,Free,Long,Mid,4.133089887640449,15.50561797752809,24,21,Machine Learning,0.2808988764044944
+CR00055,Full-Stack Web Development,Web Development,Paid,Advanced,57.32,43.95,4.74,178,10202.960000000001,57.32000000000001,0,2,Low,Long,High,4.106179775280899,16.03370786516854,24,18,Cybersecurity,0.2696629213483146
+CR00056,Google Ads Mastery,Digital Marketing,Paid,Advanced,212.39,22.89,3.15,148,31433.719999999998,212.39,0,2,Mid,Medium,Mid,4.199391891891892,15.783783783783784,24,13,Digital Marketing,0.39864864864864863
+CR00057,SEO for E-commerce,Digital Marketing,Paid,Advanced,177.34,49.73,3.89,140,24827.600000000002,177.34,0,2,Mid,Long,Mid,4.0996428571428565,15.321428571428571,24,13,Digital Marketing,0.4142857142857143
+CR00058,Social Media Strategy,Digital Marketing,Free,Beginner,0.0,1.46,4.44,194,0.0,0.0,1,0,Free,Short,High,4.192474226804124,16.242268041237114,24,13,Digital Marketing,0.3711340206185567
+CR00059,Affiliate Marketing,Digital Marketing,Free,Intermediate,0.0,5.95,4.66,161,0.0,0.0,1,1,Free,Short,High,3.9988198757763973,14.73913043478261,24,12,Digital Marketing,0.453416149068323
+CR00060,Content Creation,Digital Marketing,Free,Beginner,0.0,8.95,2.14,165,0.0,0.0,1,0,Free,Short,Low,4.096,15.915151515151516,24,13,Digital Marketing,0.37575757575757573

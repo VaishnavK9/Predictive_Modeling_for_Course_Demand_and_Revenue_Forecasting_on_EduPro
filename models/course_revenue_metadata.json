@@ -1,0 +1,84 @@
+{
+  "target": "course_revenue",
+  "winner": "Lasso",
+  "best_params": {
+    "model__alpha": 100.0
+  },
+  "cv_folds": 5,
+  "random_state": 42,
+  "numeric_features": [
+    "CoursePrice",
+    "CourseDuration",
+    "CourseRating",
+    "CourseLevel_ordinal",
+    "is_free",
+    "inst_rating_wmean",
+    "inst_years_mean",
+    "inst_years_max",
+    "inst_distinct_teachers",
+    "expertise_match_score"
+  ],
+  "nominal_features": [
+    "CourseCategory"
+  ],
+  "cv_results": [
+    {
+      "model": "Lasso",
+      "CV_RMSE": 2136.557,
+      "RMSE_std": 1072.47,
+      "CV_MAE": 1405.37,
+      "CV_R2": 0.991,
+      "R2_std": 0.004,
+      "train_RMSE": 1814.059,
+      "train_R2": 0.995,
+      "R2_gap": 0.004
+    },
+    {
+      "model": "Ridge",
+      "CV_RMSE": 2872.357,
+      "RMSE_std": 805.001,
+      "CV_MAE": 2237.204,
+      "CV_R2": 0.966,
+      "R2_std": 0.039,
+      "train_RMSE": 1552.413,
+      "train_R2": 0.996,
+      "R2_gap": 0.03
+    },
+    {
+      "model": "GradientBoosting",
+      "CV_RMSE": 2961.693,
+      "RMSE_std": 1317.701,
+      "CV_MAE": 1853.952,
+      "CV_R2": 0.983,
+      "R2_std": 0.006,
+      "train_RMSE": 857.879,
+      "train_R2": 0.999,
+      "R2_gap": 0.015
+    },
+    {
+      "model": "LinearRegression",
+      "CV_RMSE": 3067.031,
+      "RMSE_std": 840.19,
+      "CV_MAE": 2425.315,
+      "CV_R2": 0.964,
+      "R2_std": 0.038,
+      "train_RMSE": 1532.084,
+      "train_R2": 0.996,
+      "R2_gap": 0.032
+    },
+    {
+      "model": "RandomForest",
+      "CV_RMSE": 4492.695,
+      "RMSE_std": 2727.988,
+      "CV_MAE": 2526.629,
+      "CV_R2": 0.961,
+      "R2_std": 0.024,
+      "train_RMSE": 2577.465,
+      "train_R2": 0.989,
+      "R2_gap": 0.028
+    }
+  ],
+  "n_rows": 60,
+  "trained_at": "2026-06-29T22:10:10",
+  "model_file": "course_revenue_best.joblib"
+}
