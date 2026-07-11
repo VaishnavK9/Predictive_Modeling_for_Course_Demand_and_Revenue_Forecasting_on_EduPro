@@ -1,18 +1,21 @@
-# Exact, mutually ABI-compatible versions (verified running locally on
-# Python 3.13). The scientific core (numpy/scipy/scikit-learn/pandas) MUST be
-# pinned together: mixing a numpy 1.x with wheels compiled against numpy 2.x
-# causes a native segmentation fault at import on Streamlit Cloud.
+# Streamlit Community Cloud stable stack.
 #
-# These versions require Python >= 3.10 — set the app's Python version to 3.13
-# in Streamlit Cloud (Manage app -> Settings -> Advanced) to match.
-numpy==2.2.1
-scipy==1.18.0
-scikit-learn==1.6.1
-threadpoolctl==3.6.0
+# The scientific core is pinned to the numpy 1.26 generation: numpy 2.x Linux
+# wheels segfault on Cloud's CPU/BLAS at import. These exact versions are
+# verified running locally on Python 3.11 and the models in models/ are pickled
+# under this same stack, so nothing mismatches at load.
+#
+# IMPORTANT: set the app's Python version to 3.11 in Streamlit Cloud
+# (Manage app -> Settings -> Advanced). numpy 1.26.4 has no Python 3.13 wheels.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+threadpoolctl==3.5.0
 pandas==2.2.3
+pyarrow==17.0.0
 joblib==1.4.2
-matplotlib==3.10.0
+matplotlib==3.9.2
 seaborn==0.13.2
-statsmodels==0.14.4
+statsmodels==0.14.2
 streamlit==1.41.1
 openpyxl==3.1.5

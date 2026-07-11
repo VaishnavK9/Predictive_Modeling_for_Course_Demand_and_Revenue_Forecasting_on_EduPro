@@ -79,6 +79,6 @@
     }
   ],
   "n_rows": 60,
-  "trained_at": "2026-06-29T22:05:43",
+  "trained_at": "2026-07-11T12:35:39",
   "model_file": "enrollment_count_best.joblib"
 }
